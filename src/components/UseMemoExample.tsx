@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 
 interface props {
   a: number;
@@ -20,7 +20,7 @@ const UseMemoExample: React.FC<props> = ({ a, b }) => {
   };
 
   console.log("Starting expensive calculation");
-  const result = expensiveCalculation(a, b);
+  const result = useMemo(() => expensiveCalculation(a, b), [a, b]);
   console.log("Finished expensive calculation");
 
   return (
