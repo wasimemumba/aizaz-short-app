@@ -14,9 +14,9 @@ const Parent = () => {
 
   console.log("Parent rendered");
 
-  const handleClick = useCallback( () => {
+  const handleClick = useCallback(() => {
     console.log("Button clicked");
-  },[]);
+  }, []);
 
   return (
     <div>

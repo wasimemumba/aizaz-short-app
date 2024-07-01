@@ -9,6 +9,11 @@ import UseReducerExample from "./components/UseReducerExample.tsx";
 import UseRefExample from "./components/UseRefExample.tsx";
 import UseContextExample from "./components/UseContextExample.tsx";
 import Layout from "./components/Layout.tsx";
+import DebounceExample from "./components/DebounceExample.tsx";
+import ThrottleExample from "./components/ThrottleExample.tsx";
+import StyledComponentExample from "./components/StyledComponentExample.tsx";
+import LazyLoadingExample from "./components/LazyLoadingExample.tsx";
+import VirtualizedListExample from "./components/VirtulizationExample.tsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +43,26 @@ const router = createBrowserRouter([
       {
         path: "/useRef",
         element: <UseRefExample />,
+      },
+      {
+        path: "/debounce",
+        element: <DebounceExample />,
+      },
+      {
+        path: "/throttle",
+        element: <ThrottleExample />,
+      },
+      {
+        path: "styled-components",
+        element: <StyledComponentExample />,
+      },
+      {
+        path: "/lazy-loading",
+        element: <LazyLoadingExample />,
+      },
+      {
+        path: "/virtualization",
+        element: <VirtualizedListExample />,
       },
     ],
   },
